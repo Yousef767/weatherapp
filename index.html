@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/scss/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <img class="img" src="/media/bg.231b42dc.jpg" alt="">
+  <div class="container">
+    <h1>Weather Finder</h1>
+    <span>Find Out temperature , conditions and more...</span>
+    <div class="twoBoxs">
+      <div class="box1">
+        <h2>Get your weather Date</h2>
+        <button id="getLocation">Get Weather</button>
+        <div class="result" id="location">
+          <div class="rr">
+            <span>City :</span>
+            <span>--</span>
+          </div>
+          <div class="rr">
+            <span>Country :</span>
+            <span>--</span>
+          </div>
+          <div class="rr">
+            <span>Temperature :</span>
+            <span data-option="C">--</span>
+          </div>
+          <div class="rr">
+            <span>Weather condition :</span>
+            <span>--</span>
+          </div>
+          <div class="rr">
+            <span>Humidity :</span>
+            <span data-option="%">--</span>
+          </div>
+        </div>
+      </div>
+      <div class="box1">
+        <form>
+          <div class="input">
+            <label for="city">City</label>
+            <input type="text" name="city" id="city" required>
+          </div>
+          <div class="input">
+            <label for="country">Country</label>
+            <input type="text" name="country" id="country" required>
+          </div>
+          <button type="submit" id="search">Search Weather</button>
+        </form>
+        <div class="result result2" id="searchResult">
+          <div class="rr">
+            <span>City :</span>
+            <span>--</span>
+          </div>
+          <div class="rr">
+            <span>Country :</span>
+            <span>--</span>
+          </div>
+          <div class="rr">
+            <span>Temperature :</span>
+            <span data-option="C">--</span>
+          </div>
+          <div class="rr">
+            <span>Weather condition :</span>
+            <span>--</span>
+          </div>
+          <div class="rr">
+            <span>Humidity :</span>
+            <span data-option="%">--</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/js/api.js"></script>
+</body>
+
+</html>
